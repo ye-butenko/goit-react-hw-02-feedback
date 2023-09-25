@@ -1,0 +1,48 @@
+.friendList {
+  width: 250px;
+  display: grid;
+  justify-content: center;
+}
+
+/* Стилі для кожного елементу списку */
+.item {
+  display: flex; /* Зробити дочірні елементи блоками */
+  align-items: center; /* Вирівнювання елементів по вертикалі */
+  margin-bottom: 10px; /* Відступ вниз між елементами */
+}
+
+/* Стилі для статусу (онлайн/офлайн) */
+.status {
+  width: 10px; /* Ширина статусу */
+  height: 10px; /* Висота статусу */
+  border-radius: 50%; /* Закруглені кути для статусу (створює коло) */
+  background-color: red; /* Колір для онлайн */
+  margin-right: 5px; /* Відступ справа від аватара */
+
+  &.isOnline {
+    background-color: green;
+    animation: onlineStatus 1.2s infinite; /* Колір для онлайн */
+  }
+}
+
+/* Стилі для аватара */
+.avatar {
+  width: 48px; /* Ширина аватара */
+  height: 48px; /* Висота аватара */
+  border-radius: 50%; /* Закруглені кути для аватара (створює коло) */
+  object-fit: cover; /* Заповнення контейнера збереженням співвідношення сторін */
+  margin-right: 10px; /* Відступ справа від імені */
+}
+
+/* Стилі для імені користувача */
+.name {
+  font-size: 1rem; /* Розмір шрифту */
+  font-weight: bold; /* Товщина шрифту */
+}
+
+@keyframes onlineStatus {
+  100% {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+}

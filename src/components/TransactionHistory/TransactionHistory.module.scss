@@ -1,0 +1,34 @@
+/* Стилі для таблиці */
+table {
+  width: 250px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тінь */
+}
+
+/* Стилі для заголовка таблиці (thead) */
+thead {
+  background-color: aqua;
+}
+
+/* Стилі для рядків таблиці (tr) */
+tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Стилі для комірок таблиці (th та td) */
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Стилі для назв стовпців таблиці (th) */
+th {
+  font-weight: bold;
+}
+
+/* Стилі для парних рядків таблиці */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
