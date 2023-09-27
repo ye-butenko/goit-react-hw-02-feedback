@@ -1,8 +1,6 @@
 @import-normalize;
 
-:root {
-  --width: 250px;
-}
+/* :root {} */
 
 body {
   margin: 0;
